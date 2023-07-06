@@ -22,7 +22,11 @@ app.use(handlers.notFound)
 
 app.use(handlers.serverError)
 
-app.listen(port, () => {
-    console.log('port ::: ')
-    console.log(port)
-})
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log('port ::: ')
+        console.log(port)
+    })
+} else {
+    module.exports = app
+}
