@@ -1,10 +1,10 @@
 const fortunes = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
+    "Some funny 1",
+    "Some funny 2",
+    "Some funny 3",
+    "Some funny 4",
+    "Some funny 5",
+    "Some funny 6",
 ]
 
 exports.getFortune = () => {
